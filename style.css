@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  color: #002970;
+}
+
+header {
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00baf2;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.logo {
+  text-align: left;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #e7f6fd;
+}
+
+.services,
+.offers,
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.service-boxes,
+.offer-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box,
+.offer,
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 50px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+
+.services-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.login-container {
+  background: white;
+  padding: 40px 30px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container label {
+  display: block;
+  margin: 12px 0 5px;
+  font-weight: 500;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #00baf2;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 15px;
+}
+
+footer {
+  background-color: #002970;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: inline-block;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    padding: 40px 16px;
+  }
+
+  .service-boxes,
+  .offer-cards {
+    gap: 16px;
+  }
+
+  .box,
+  .offer,
+  .card {
+    width: 180px;
+    padding: 16px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    padding: 28px;
+  }
+
+  .login-container {
+    width: 420px;
+    padding: 36px;
+  }
+
+  .navbar a {
+    margin: 0 8px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 6px;
+  }
+
+  .logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 6px;
+  }
+
+  .navbar a {
+    padding: 8px 10px;
+    display: inline-block;
+    border-radius: 8px;
+  }
+
+  .hero {
+    padding: 36px 12px;
+  }
+
+  .service-boxes,
+  .offer-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .login-section {
+    padding: 40px 12px;
+  }
+
+  .login-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 12px;
+    padding: 28px;
+  }
+
+  .box,
+  .offer,
+  .card {
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  footer {
+    padding: 20px 12px;
+  }
+
+  .footer-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    margin: 4px;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .login-container {
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .login-container h1 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .login-container input {
+    padding: 9px;
+  }
+
+  .login-container button {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .grid {
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .box,
+  .offer,
+  .card {
+    padding: 14px;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  footer p,
+  footer a {
+    font-size: 13px;
+  }
+}
